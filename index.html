@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8e5e4"><title>Birthday Island</title>
+<link rel="stylesheet" href="style.css"></head><body>
+
+<section class="welcome" id="welcome"><div class="welcome-card"><div class="eyebrow">A little world made for you</div><h1>Birthday<br>Island</h1><p id="welcomeText"></p><button class="primary" onclick="enterIsland()">Enter the island</button></div></section>
+<main class="island-page" id="island"><header class="top"><div><div class="brand">BIRTHDAY ISLAND</div><div class="sub">A LITTLE ISLAND. A MILLION LITTLE SURPRISES.</div></div><div class="progress"><span id="starCount">0</span> / 10 stars<div class="meter"><i id="meterFill"></i></div></div></header>
+<div class="island-wrap"><img class="island-art" alt="A dreamy illustrated floating birthday island with flower gardens, cottages, a lighthouse and carnival" src="assets/island-art.webp">
+<button class="hotspot h-gift" onclick="openPlace('gift')">Gift Village<small>little surprises</small></button><button class="hotspot h-garden" onclick="openPlace('garden')">Memory Garden<small>our moments</small></button><button class="hotspot h-fun" onclick="openPlace('fun')">The Funfair<small>let's play</small></button><button class="hotspot h-light" onclick="openPlace('light')">Secret Lighthouse<small>10 stars to unlock</small></button><button class="hotspot h-music" onclick="openPlace('music')">Music Beach<small>press play</small></button><button class="hotspot h-sweet" onclick="openPlace('sweet')">Sweet Street<small>a little treat</small></button><button class="hotspot h-secret" onclick="openPlace('secret')">Wish Pavilion<small>make a wish</small></button><button class="hotspot h-grand" onclick="openPlace('grand')">Grand Celebration<small>the finale</small></button></div><p class="caption">Take your time. There are little surprises hidden everywhere.</p><div class="foot">MADE WITH LOVE · REPLAY ANYTIME</div></main>
+<div class="modal" id="modal" onclick="if(event.target===this)closePlace()"><section class="panel"><div class="panel-head"><div class="eyebrow">A little island moment</div><button class="close" onclick="closePlace()">×</button></div><div id="panelContent"></div></section></div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body></html>
